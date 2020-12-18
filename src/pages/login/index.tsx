@@ -12,7 +12,7 @@ const action: IAction = async ({ fromState, toState }) => ({
   content: (
     <ReduxStoreLoader
       fromState={fromState}
-      storeInjectConfig={storeInjectConfig(toState.name)}
+      storeInjectConfig={storeInjectConfig}
       toState={toState}
       withoutRemovingReducers
     >

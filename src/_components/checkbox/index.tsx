@@ -8,12 +8,12 @@ import React, {
   SyntheticEvent,
 } from 'react';
 import classNames from 'classnames/bind';
+import { keyCodes } from '@/_constants/key-codes';
 import { BasicCheckMarkIcon } from '../icons/basic-check-mark-icon';
 import { BasicMinusIcon } from '../icons/basic-minus-icon';
 import { CheckboxProps } from './_types';
 import forCheckboxStyle from './checkbox.module.scss';
 import forToggleStyle from './toggle.module.scss';
-import { keyCodes } from '@/_constants/key-codes';
 
 const checkboxClassNames = classNames.bind(forCheckboxStyle);
 const toggleClassNames = classNames.bind(forToggleStyle);

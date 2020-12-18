@@ -108,7 +108,7 @@ export const FormCheckbox = memo(
 
           {label && (
             <div className={cn('Form-checkbox__label')}>
-              <Label  htmlFor={id} required={required}>
+              <Label htmlFor={id} required={required}>
                 {label}
               </Label>
             </div>

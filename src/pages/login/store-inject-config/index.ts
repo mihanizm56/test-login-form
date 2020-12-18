@@ -1,16 +1,20 @@
-import { StoreInjectConfig } from '@wildberries/redux-core-modules';
+import loginFormStorage, {
+  loginWatcherSaga,
+  LOGIN_SAGA_NAME,
+  MODULE_REDUCER_NAME as loginFormReducerName,
+} from '../_redux/login-module';
 
-export const storeInjectConfig = (routeName: string): StoreInjectConfig => ({
+export const storeInjectConfig = {
   sagasToInject: [
-    // {
-    //   name: REGISTER_SAGA_NAME,
-    //   saga: registerWatcherSaga,
-    // },
+    {
+      name: LOGIN_SAGA_NAME,
+      saga: loginWatcherSaga,
+    },
   ],
   reducersToInject: [
-    // {
-    //   name: registrationFormModuleReducerName,
-    //   reducer: registrationFormStorage,
-    // },
+    {
+      name: loginFormReducerName,
+      reducer: loginFormStorage,
+    },
   ],
-});
+};

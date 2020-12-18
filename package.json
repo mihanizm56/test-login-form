@@ -118,7 +118,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS -g config/git/commitlint.js",
-      "pre-commit": "npm run lint && npx tsc && npm run build",
+      "pre-commit": "npm run lint && git add . && npx tsc && npm run build",
       "prepare-commit-msg": "node config/git/prepare-commit.js"
     }
   },

@@ -6,9 +6,9 @@ import { LoginFormValuesType } from '@/pages/login/_types';
 import { FormSimpleInput } from '@/_components/inputs/form-simple-input';
 import { Text } from '@/_components/text';
 import { ButtonLink } from '@/_components/button-link';
+import { FormCheckbox } from '@/_components/form-checkbox';
 import { ChangeFormFieldValuesType } from '../../_types';
 import styles from './index.module.scss';
-import { FormCheckbox } from '@/_components/form-checkbox';
 
 const cn = classnames.bind(styles);
 
@@ -84,12 +84,12 @@ export const LoginFormView = memo(
               <div className={cn(`${BLOCK_NAME}__field-wrapper`)}>
                 <Field
                   component={FormCheckbox}
-                  name="oferta"
                   disabled={isLoading}
-                  validate={formValidations.oferta}
-                  label='Согласен с условиями оферты'
-                  type='checkbox'
+                  label="Согласен с условиями оферты"
+                  name="oferta"
                   required
+                  type="checkbox"
+                  validate={formValidations.oferta}
                 />
                 <ChangeFieldHandler name="password">
                   {({ name, value }) => {
@@ -97,19 +97,19 @@ export const LoginFormView = memo(
                   }}
                 </ChangeFieldHandler>
               </div>
-              
+
               <div className={cn(`${BLOCK_NAME}__button-wrapper`)}>
                 <ButtonLink
                   disabled={isLoading || hasBackendErrors || invalid}
                   fullWidth
                   isLoading={isLoading}
-                  withLoader
                   isTextCenter
                   size="big"
                   text="Войти"
                   textUpperCase
                   type="submit"
                   variant="main"
+                  withLoader
                 />
               </div>
             </form>
