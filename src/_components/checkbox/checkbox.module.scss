@@ -1,0 +1,135 @@
+@import "@/styles/constants.module.scss";
+@import "@/styles/media.module.scss";
+
+.Checkbox {
+  background-color: $White;
+  border: 1px solid $Grey;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: $Black;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  outline: none;
+  overflow: hidden;
+  transition: border-color .3s;
+  width: 20px;
+
+  &:hover {
+    border: 1px solid $DarkPurple;
+  }
+
+  &__icon {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+
+    &-indeterminate {
+      background-color: $Orange;
+    }
+  }
+
+  &--radio {
+    border-radius: 50%;
+
+    & .Checkbox__icon-indeterminate {
+      background-color: $White;
+      border-radius: 50%;
+      display: block;
+      height: 8px;
+      width: 8px;
+    }
+  }
+
+  &--focused {
+    border: 1px solid $DarkPurple;
+  }
+
+  &--checked {
+    border: none;
+
+    &:hover {
+      border: none;
+      color: $DarkPurple;
+    }
+
+    &.Checkbox {
+      &--orange {
+        background-color: $Orange;
+      }
+
+      &--blue {
+        background-color: $Blue;
+      }
+
+      &--red {
+        background-color: $Red;
+      }
+
+      &--green {
+        background-color: $SuccessTextColor;
+      }
+
+      &--yellow {
+        background-color: $Yellow;
+      }
+
+      &--pink {
+        background-color: $Pink;
+      }
+
+      &--oceanBlue {
+        background-color: $OceanBlue;
+      }
+
+      &--paleBlue {
+        background-color: $PaleBlue;
+      }
+
+      &:disabled {
+        background-color: transparent;
+      }
+
+      &--focused {
+        border: 1px solid $DarkPurple;
+      }
+
+      &--disabled {
+        background-color: $LightGrey;
+        border-color: $Grey;
+        cursor: default;
+
+        &:hover {
+          border: 1px solid $Grey;
+        }
+      }
+
+      &--radio {
+        &.Checkbox--disabled {
+          background-color: $Grey;
+        }
+      }
+    }
+  }
+
+  &--disabled {
+    background-color: $LightGrey;
+    border: 1px solid $Grey;
+    cursor: default;
+
+    &:hover {
+      border: 1px solid $Grey;
+    }
+  }
+
+  &__input {
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    width: 0;
+  }
+}

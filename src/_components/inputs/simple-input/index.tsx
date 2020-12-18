@@ -8,7 +8,7 @@ import React, {
   useMemo,
 } from 'react';
 import classNames from 'classnames/bind';
-import { keyCodes } from '../_utils/key-codes';
+import { keyCodes } from '../../../_constants/key-codes';
 import { NavigationZoomIcon } from '../../icons/navigation-zoom-icon';
 import { NavigationEyeIcon } from '../../icons/navigation-eye-icon';
 import { NavigationEyeNoIcon } from '../../icons/navigation-eye-no-icon';

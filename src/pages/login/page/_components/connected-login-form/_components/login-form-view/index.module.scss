@@ -1,4 +1,5 @@
 @import "@/styles/constants.module.scss";
+@import "@/styles/media.module.scss";
 
 .Login-form-view {
   background-color: $White;
@@ -20,5 +21,11 @@
 
   &__button-wrapper {
     padding-top: 10px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .Login-form-view{
+    width: 100%;
   }
 }

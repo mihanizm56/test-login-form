@@ -26,4 +26,7 @@ export const FORM_VALIDATIONS_CONFIG = {
       'Пароль должен содержать не более 20 символов',
     ),
   ]),
+  oferta: composeValidators([
+    simpleFieldValidator.requiredValidator('Необходимо подтвердить согласие'),
+  ]),
 };

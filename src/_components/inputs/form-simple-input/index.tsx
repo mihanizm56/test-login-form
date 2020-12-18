@@ -19,7 +19,7 @@ import {
   SimpleInputFocusEventType,
   SimpleInputKeyPressEventType,
 } from '../simple-input/_types';
-import { getIsErrorField } from '../_utils/final-form-utils/get-is-error-field';
+import { getIsErrorField } from '../_utils/get-is-error-field';
 import styles from './index.module.scss';
 
 const cn = classNames.bind(styles);

@@ -8,6 +8,7 @@ import { Text } from '@/_components/text';
 import { ButtonLink } from '@/_components/button-link';
 import { ChangeFormFieldValuesType } from '../../_types';
 import styles from './index.module.scss';
+import { FormCheckbox } from '@/_components/form-checkbox';
 
 const cn = classnames.bind(styles);
 
@@ -66,9 +67,9 @@ export const LoginFormView = memo(
                   autoComplete="on"
                   component={FormSimpleInput}
                   externalErrorMessage={externalErrors.login}
-                  label="Логин"
+                  label="Пароль"
                   name="password"
-                  placeholder="Введите ваш логин"
+                  placeholder="Введите ваш пароль"
                   readOnly={isLoading}
                   required
                   type="password"
@@ -80,11 +81,29 @@ export const LoginFormView = memo(
                   }}
                 </ChangeFieldHandler>
               </div>
+              <div className={cn(`${BLOCK_NAME}__field-wrapper`)}>
+                <Field
+                  component={FormCheckbox}
+                  name="oferta"
+                  disabled={isLoading}
+                  validate={formValidations.oferta}
+                  label='Согласен с условиями оферты'
+                  type='checkbox'
+                  required
+                />
+                <ChangeFieldHandler name="password">
+                  {({ name, value }) => {
+                    changeFormField({ name, value });
+                  }}
+                </ChangeFieldHandler>
+              </div>
+              
               <div className={cn(`${BLOCK_NAME}__button-wrapper`)}>
                 <ButtonLink
                   disabled={isLoading || hasBackendErrors || invalid}
                   fullWidth
                   isLoading={isLoading}
+                  withLoader
                   isTextCenter
                   size="big"
                   text="Войти"
