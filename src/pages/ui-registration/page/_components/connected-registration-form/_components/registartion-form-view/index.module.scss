@@ -1,0 +1,39 @@
+@import "@wildberries/ui-kit/lib/styles/media.module.scss";
+@import "@wildberries/ui-kit/lib/styles/keyframes.module.scss";
+
+.Supplier-form-view {
+  max-width: 640px;
+  min-height: 140px;
+  position: relative;
+
+  &--loading {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  &__preloader-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 140px;
+  }
+
+  &__content-info {
+    &--enter {
+      animation: fadeInOverlay 500ms forwards;
+    }
+
+    &--exit {
+      animation: fadeOutOverlay 500ms forwards;
+    }
+  }
+}
+
+@media #{$mobile} {
+  .Supplier-form-view {
+    max-width: 100%;
+    min-height: 100px;
+  }
+}

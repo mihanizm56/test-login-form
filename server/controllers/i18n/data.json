@@ -1,0 +1,83 @@
+{
+  "backend-errors": {
+    "network-error": "Ошибка соединения",
+    "errorDB": "Ошибка данных",
+    "failedUploadPhoto": "Ошибка загрузки фотографии"
+  },
+  "organization": "Организация",
+  "ip": "ИП",
+  "ownJob": "Самозанятый",
+  "form-page": {
+    "page-title": "Регистрация",
+    "title": "Регистрация",
+    "buttonSubmit": "Зарегистрироваться",
+    "buttonCancel": "Отменить",
+    "legalForm": "Форма организации",
+    "legalFormPlaceholder": " ",
+    "inn": "ИНН",
+    "innPlaceholder": " ",
+    "kpp": "КПП",
+    "kppPlaceholder": " ",
+    "ogrn": "ОГРН",
+    "ogrnPlaceholder": " ",
+    "ogrnip": "ОГРНИП",
+    "ogrnipPlaceholder": " ",
+    "okpo": "ОКПО",
+    "okpoPlaceholder": " ",
+    "okopf": "ОКПОФ",
+    "okopfPlaceholder": " ",
+    "generalBusiness": "ФИО руководителя",
+    "generalOwn": "ФИО",
+    "generalBusinessPlaceholder": " ",
+    "generalOwnPlaceholder": " ",
+    "name": "Наименование поставщика",
+    "passportDoc": "Фото с паспортом",
+    "passportDocPlaceholder": " ",
+    "fullName": "Полное наименование юр. лица",
+    "fullNamePlaceholder": " ",
+    "not-success-submit": "Не удалось зарегистрировать поставщика",
+    "success-submit": "Поставщик успешно зарегистрирован",
+    "countryID": "Страна",
+    "countryLabel": "Страна",
+    "countryPlaceholder": " ",
+    "mainInfo": "Основная информация",
+    "innInfo": "Введите ИНН вашей организации. Мы его проверим и автоматически заполним основные данные.",
+    "photoContentTitle": "Фото с паспортом",
+    "photoContentText": "Для продолжения регистрации, пожалуйста, загрузите фото с паспортом. Это необходимо для регистрации и подтверждения Вашей личности",
+    "form-errors-text": "Ошибки на полях формы: ",
+    "inn-loading-failed": "Не удалось произвести поиск по ИНН",
+    "allowFormatsPlaceholder": "Формат .SVG, .JPG, .PNG",
+    "nameOrganizationPlaceholder": "ООО «Инванов»",
+    "nameOrganizationTooltipText": "Наименование поставщика – это сокращенное название юридического лица, которое будет отображатся на портале поставщиков.",
+    "nameIpTooltipText": "Наименование поставщика – это сокращенное название индивидуального предпринимателя, которое будет отображатся на портале поставщиков",
+    "nameIpPlaceholder": "ИП «Инванов»",
+    "field-form-errors": {
+      "required": "Поле обязательно для заполнения",
+      "min-value": "Слишком короткое значение",
+      "max-value": "Слишком длинное значение",
+      "numbers-only": "Допустимы только числа",
+      "inn-invalid": "Некорректный ИНН",
+      "upload-document-required": "Загрузите файл"
+    },
+    "country": {
+      "label": {
+        "CH": "Швейцария",
+        "DE": "Германия",
+        "IT": "Италия",
+        "NL": "Нидерланды",
+        "PL": "Польша",
+        "RU": "Россия",
+        "BY": "Беларусь",
+        "KZ": "Казахстан"
+      }
+    }
+  },
+  "legal-form-values": {
+    "ip-with-nds": "ИП с НДС",
+    "ip-without-nds": "ИП без НДС",
+    "ip-on-npd": "ИП на НПД",
+    "organization-with-nds": "Организация с НДС",
+    "organization-without-nds": "Организация без НДС",
+    "ownJob": "Самозанятый"
+  }
+}

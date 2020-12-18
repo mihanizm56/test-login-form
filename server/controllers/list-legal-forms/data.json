@@ -1,0 +1,78 @@
+{
+  "e128ce0f-852b-5c3c-9b95-f3d9829cc2a2": [
+    {
+      "id": 1,
+      "value": "ip-without-nds",
+      "title": "legal-form-values.ip-without-nds"
+    },
+    {
+      "id": 2,
+      "value": "ip-with-nds",
+      "title": "legal-form-values.ip-with-nds"
+    },
+    {
+      "id": 3,
+      "value": "ip-on-npd",
+      "title": "legal-form-values.ip-on-npd"
+    },
+    {
+      "id": 4,
+      "value": "organization-with-nds",
+      "title": "legal-form-values.organization-with-nds"
+    },
+    {
+      "id": 5,
+      "value": "organization-without-nds",
+      "title": "legal-form-values.organization-without-nds"
+    },
+    {
+      "id": 6,
+      "value": "ownJob",
+      "title": "legal-form-values.ownJob"
+    }
+  ],
+  "84fbd842-4051-5702-a638-79bdb7123123": [
+    {
+      "id": 1,
+      "value": "ip-without-nds",
+      "title": "legal-form-values.ip-without-nds"
+    },
+    {
+      "id": 2,
+      "value": "ip-with-nds",
+      "title": "legal-form-values.ip-with-nds"
+    },
+    {
+      "id": 4,
+      "value": "organization-with-nds",
+      "title": "legal-form-values.organization-with-nds"
+    },
+    {
+      "id": 5,
+      "value": "organization-without-nds",
+      "title": "legal-form-values.organization-without-nds"
+    }
+  ],
+  "84fbd842-4051-5702-a638-791232131312": [
+    {
+      "id": 1,
+      "value": "ip-without-nds",
+      "title": "legal-form-values.ip-without-nds"
+    },
+    {
+      "id": 2,
+      "value": "ip-with-nds",
+      "title": "legal-form-values.ip-with-nds"
+    },
+    {
+      "id": 4,
+      "value": "organization-with-nds",
+      "title": "legal-form-values.organization-with-nds"
+    },
+    {
+      "id": 5,
+      "value": "organization-without-nds",
+      "title": "legal-form-values.organization-without-nds"
+    }
+  ]
+}

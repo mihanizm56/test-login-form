@@ -1,0 +1,17 @@
+@import "@wildberries/ui-kit/lib/styles/media.module.scss";
+
+.Submit-buttons-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 360px;
+  padding-top: 8px;
+}
+
+@media #{$mobile} {
+  .Submit-buttons-box {
+    flex-direction: column;
+    height: 120px;
+    max-width: 100%;
+    padding-top: 16px;
+  }
+}
