@@ -1,3 +1,3 @@
-import home from './ui-registration/route';
+import home from './login/route';
 
 export const routes = [home];

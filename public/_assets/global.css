@@ -17,8 +17,3 @@ body {
   flex-direction: column;
   flex-grow: 1;
 }
-
-:root {
-  --overlay-animation-duration: "500ms";
-  --overlay-opacity: 1;
-}

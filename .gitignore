@@ -11,13 +11,6 @@
 # envs
 /.env
 
-# Misc
-.DS_Store
-
 # ide
 .idea
 .vscode
-
-
-# videoshots
-videoshot-with-error/
