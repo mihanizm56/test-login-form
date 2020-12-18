@@ -1,0 +1,24 @@
+@import "@/styles/constants.module.scss";
+
+.Login-form-view {
+  background-color: $White;
+  border: 1px;
+  border-radius: 6px;
+  padding: 40px;
+  width: 300px;
+
+  &__title {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  &__field-wrapper {
+    padding-bottom: 10px;
+  }
+
+  &__button-wrapper {
+    padding-top: 10px;
+  }
+}

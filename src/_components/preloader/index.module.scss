@@ -1,0 +1,74 @@
+@import "@/styles/constants.module.scss";
+@import "@/styles/media.module.scss";
+@import "@/styles/keyframes.module.scss";
+
+.Preloader {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  &__circular {
+    animation: spin 1250ms infinite linear;
+    border-style: solid;
+    border-width: 3px;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-indent: -9999;
+
+    &--small {
+      border-radius: 10px;
+      height: 20px;
+      width: 20px;
+    }
+
+    &--medium {
+      border-radius: 16px;
+      height: 32px;
+      width: 32px;
+    }
+
+    &--large {
+      border-radius: 25px;
+      height: 50px;
+      width: 50px;
+    }
+
+    &--white {
+      border-color: $White;
+      border-right-color: transparent;
+    }
+
+    &--rich-grey {
+      border-color: $RichGrey;
+      border-right-color: transparent;
+    }
+
+    &--light-green {
+      border-color: $SuccessButtonColor;
+      border-right-color: transparent;
+    }
+
+    &--red {
+      border-color: $Red;
+      border-right-color: transparent;
+    }
+
+    &--grey {
+      border-color: $Grey;
+      border-right-color: transparent;
+    }
+
+    &--dark-purple {
+      border-color: $DarkPurple;
+      border-right-color: transparent;
+    }
+
+  }
+}

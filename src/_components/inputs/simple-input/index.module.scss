@@ -1,0 +1,86 @@
+@import "@/styles/constants.module.scss";
+@import "@/styles/media.module.scss";
+@import "@/styles/mixins.module.scss";
+
+@include drop-default-search-icon();
+
+.Simple-input {
+  position: relative;
+
+  &__field {
+    border: 1px solid $Grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: $Black;
+    font-family: $LatoFont;
+    font-style: normal;
+    font-weight: 500;
+    outline: none;
+    padding: 11px 12px;
+    width: 100%;
+
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: $Grey;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $Grey;
+      opacity: 1;
+    }
+
+    &:focus {
+      border: 1px solid $DarkPurple;
+    }
+
+    &:disabled,
+    &--disabled {
+      border-color: $Grey;
+      color: $Grey;
+    }
+
+    &--searching {
+      padding-right: 35px;
+    }
+
+    &--error {
+      border: 1px solid $Red;
+    }
+
+    &--readOnly {
+      background-color: $SuperDuperLightGrey;
+      border: 1px solid $Grey;
+    }
+
+    &--dark-theme {
+      background-color: $RichGrey;
+
+      &:focus {
+        border-color: #fff731;
+      }
+    }
+
+    @include h4;
+  }
+
+  &__icon {
+    display: inline-block;
+    height: 40px;
+    position: absolute;
+    right: 4px;
+    top: 2px;
+    width: 40px;
+  }
+}
+
+@media #{$mobile} {
+  .Simple-input {
+    &__field {
+      height: 48px;
+      line-height: 22px;
+      padding: 12px 12px;
+      width: 100%;
+    }
+  }
+}

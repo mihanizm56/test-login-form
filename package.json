@@ -8,7 +8,6 @@
     "@wildberries/notifications": "1.0.9",
     "@wildberries/redux-core-modules": "0.2.0",
     "@wildberries/service-router": "0.0.28",
-    "@wildberries/ui-kit": "1.0.2",
     "@wildberries/validators": "0.1.4",
     "classnames": "2.2.6",
     "colors": "1.4.0",
