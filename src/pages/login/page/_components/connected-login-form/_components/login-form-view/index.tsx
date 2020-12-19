@@ -82,7 +82,7 @@ export const LoginFormView = memo(
                 <Field
                   component={FormCheckbox}
                   disabled={isLoading}
-                  label="Согласен с условиями оферты"
+                  label="Согласен с офертой"
                   name="oferta"
                   required
                   type="checkbox"
