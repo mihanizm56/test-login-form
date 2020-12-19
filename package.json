@@ -1,7 +1,6 @@
 {
   "name": "test-login-form",
   "version": "2.0.0",
-  "homepage": "https://mihanizm56.github.io/test-login-form",
   "dependencies": {
     "@mihanizm56/fetch-api": "3.4.4",
     "@mihanizm56/react-final-form-utils": "0.0.4",
@@ -41,7 +40,9 @@
     "start": "npx react-app-rewired start",
     "build": "npx react-app-rewired build",
     "commit": "git add . && git commit --no-edit",
-    "lint": "npx eslint src/ --ext .ts,.js,.tsx --fix && npx stylelint --fix --max-warnings=0 'src/**/*.{modules.scss,scss,css}'"
+    "lint": "npx eslint src/ --ext .ts,.js,.tsx --fix && npx stylelint --fix --max-warnings=0 'src/**/*.{modules.scss,scss,css}'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
