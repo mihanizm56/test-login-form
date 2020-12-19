@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+- 12.13.0
+
+script:
+    - npm run lint
+    - npm run build
+
+deploy:
+    provider: pages
+    local_dir: build
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    on:
+      tags: true
+      branches:
+        only:
+        - /v(\d)\.(\d)\.(\d)(\-\d)?/
