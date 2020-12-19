@@ -1,6 +1,7 @@
 {
   "name": "test-login-form",
   "version": "2.0.0",
+  "homepage": "https://mihanizm56.github.io/test-login-form",
   "dependencies": {
     "@mihanizm56/fetch-api": "3.4.4",
     "@mihanizm56/react-final-form-utils": "0.0.4",
