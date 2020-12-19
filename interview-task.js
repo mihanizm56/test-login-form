@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 const getTail = (head, tail = null) => ({ value: head, next: tail });
 
 const list = getTail(5, getTail(7, getTail(12, getTail(45))));

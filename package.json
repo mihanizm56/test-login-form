@@ -43,7 +43,6 @@
     "lint": "npx eslint src/ --ext .ts,.js,.tsx --fix && npx stylelint --fix --max-warnings=0 'src/**/*.{modules.scss,scss,css}'"
   },
   "devDependencies": {
-    "@babel/types": "7.6.1",
     "@commitlint/cli": "8.2.0",
     "@types/enzyme": "3.10.4",
     "@types/jest": "24.9.1",
@@ -71,16 +70,16 @@
     "ts-jest": "25.0.0"
   },
   "peerDependencies": {
+    "@hapi/joi": "17.1.1",
+    "i18next": "19.4.4",
     "react-redux": "7.2.0",
+    "react-router5": "7.1.0",
     "redux": "4.0.5",
     "redux-batched-actions": "0.4.1",
     "redux-devtools-extension": "2.13.8",
     "redux-saga": "1.1.1",
-    "react-router5": "7.1.0",
-    "router5": "7.0.2",
     "reselect": "4.0.0",
-    "@hapi/joi": "17.1.1",
-    "i18next": "19.4.4"
+    "router5": "7.0.2"
   },
   "browserslist": {
     "production": [
@@ -122,5 +121,7 @@
     }
   },
   "config-overrides-path": "config/webpack/config-overrides.js",
-  "babel": {}
+  "resolutions": {
+    "@babel/types": "7.8.6"
+  }
 }
