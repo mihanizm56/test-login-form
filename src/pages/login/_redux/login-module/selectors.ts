@@ -16,3 +16,9 @@ export const loginFormIsLoadingSelector = createSelector(
   [loginFormStorageSelector],
   ({ isLoading }: LoginFormStorage) => isLoading,
 );
+
+export const loginFormHasExternalErrorsSelector = createSelector(
+  [loginFormStorageSelector],
+  ({ externalErrors }: LoginFormStorage) =>
+    Object.keys(externalErrors).length > 0,
+);

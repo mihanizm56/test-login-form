@@ -7,17 +7,17 @@ export const loginActionSaga: Action<LoginFormValuesType> = payload => ({
   payload,
 });
 
-export const SET_EXTERNAL_LOGIN_ERROR = 'SET_EXTERNAL_LOGIN_ERROR';
+export const SET_EXTERNAL_LOGIN_ERRORS = 'SET_EXTERNAL_LOGIN_ERRORS';
 export const setExternalErrorsLoginFormAction: Action<
   Record<string, string>
 > = payload => ({
-  type: SET_EXTERNAL_LOGIN_ERROR,
+  type: SET_EXTERNAL_LOGIN_ERRORS,
   payload,
 });
 
-export const REMOVE_EXTERNAL_LOGIN_ERROR = 'REMOVE_EXTERNAL_LOGIN_ERROR';
+export const REMOVE_EXTERNAL_LOGIN_ERRORS = 'REMOVE_EXTERNAL_LOGIN_ERRORS';
 export const removeExternalErrorsLoginFormAction: BaseAction = () => ({
-  type: REMOVE_EXTERNAL_LOGIN_ERROR,
+  type: REMOVE_EXTERNAL_LOGIN_ERRORS,
 });
 
 export const SET_LOADING_START = 'SET_LOADING_START';

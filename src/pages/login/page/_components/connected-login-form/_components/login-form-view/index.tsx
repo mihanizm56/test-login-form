@@ -1,4 +1,4 @@
-import React, { memo, useMemo } from 'react';
+import React, { memo } from 'react';
 import classnames from 'classnames/bind';
 import { Field, Form } from 'react-final-form';
 import { ChangeFieldHandler } from '@mihanizm56/react-final-form-utils';
@@ -20,6 +20,7 @@ type PropsType = {
   submitLoginForm: (values: LoginFormValuesType) => void;
   externalErrors: Record<string, string>;
   formValidations: Record<string, any>;
+  loginFormHasExternalErrors: boolean;
 };
 
 export const LoginFormView = memo(
@@ -29,12 +30,8 @@ export const LoginFormView = memo(
     isLoading,
     externalErrors,
     formValidations,
+    loginFormHasExternalErrors,
   }: PropsType) => {
-    const hasBackendErrors = useMemo(
-      () => Object.keys(externalErrors).length !== 0,
-      [externalErrors],
-    );
-
     return (
       <div className={cn(`${BLOCK_NAME}`)}>
         <Form
@@ -66,7 +63,7 @@ export const LoginFormView = memo(
                 <Field
                   autoComplete="on"
                   component={FormSimpleInput}
-                  externalErrorMessage={externalErrors.login}
+                  externalErrorMessage={externalErrors.password}
                   label="Пароль"
                   name="password"
                   placeholder="Введите ваш пароль"
@@ -100,7 +97,7 @@ export const LoginFormView = memo(
 
               <div className={cn(`${BLOCK_NAME}__button-wrapper`)}>
                 <ButtonLink
-                  disabled={isLoading || hasBackendErrors || invalid}
+                  disabled={isLoading || loginFormHasExternalErrors || invalid}
                   fullWidth
                   isLoading={isLoading}
                   isTextCenter

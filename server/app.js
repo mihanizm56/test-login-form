@@ -18,8 +18,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // router
-app.use('/ns/suppliers/suppliers-portal-eu/suppliers', rootRouter);
-app.use('/', rootRouter);
+app.use('/api', rootRouter);
 
 app.use((req, res, next) => {
   next(createError(404));

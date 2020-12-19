@@ -281,7 +281,7 @@
       @extend %behaviour-opacity-big;
 
       &:focus {
-        border: 2px solid $Blue;
+        box-shadow: 0 0 0 2px $Blue;
       }
 
       &:active {
